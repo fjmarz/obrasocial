@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Insurance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Health Insurance Calculator</h1>
+    <div class="input-group">
+      <label for="plan">Plan:</label>
+      <select id="plan">
+        <option value="2-210">2-210</option>
+        <option value="2-310">2-310</option>
+        <option value="2-410">2-410</option>
+        <option value="2-450">2-450</option>
+        <option value="2-510">2-510</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="ageGroup">Age Group:</label>
+      <select id="ageGroup">
+        <option value="Up to 27">Up to 27</option>
+        <option value="28 to 35">28 to 35</option>
+        <option value="36+">36+</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="marriage">Marriage:</label>
+      <select id="marriage">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="children">Number of Children:</label>
+      <input type="number" id="children" min="0" value="0">
+    </div>
+    <div class="input-group">
+      <label for="dependents">Other Dependents:</label>
+      <select id="dependents">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="numDependents">Number of Other Dependents:</label>
+      <input type="number" id="numDependents" min="0" value="0">
+    </div>
+    <button onclick="calculate()">Calculate</button>
+    <div id="result">Total Cost: $0</div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
